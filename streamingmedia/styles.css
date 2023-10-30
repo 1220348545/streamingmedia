@@ -1,0 +1,256 @@
+html {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #020659;
+    color: white;
+  }
+  
+  li {
+    display: inline;
+    float: left;
+    padding: 15px;
+  }
+  
+  li a {
+    padding: 15px;
+  }
+  
+  ul {
+    list-style-type: none;
+    color: white;
+    margin: 0;
+    overflow: hidden;
+  }
+  
+  a {
+    text-decoration: none;
+    color: white;
+  }
+  nav {
+    background-color: #020873;
+    margin-bottom: 0px;
+  }
+  nav a:hover{
+    color: white;
+    background-color: #590242;
+  }
+  
+  header {
+    background-image: linear-gradient(to right, #2104D9, #303ABC, #020873, black);
+    margin-top: 0px;
+    padding: 10px;
+  }
+  body {
+    margin: 0;
+    display: auto;
+    viewport
+  }
+  
+  main{
+    padding:50px;
+  }
+  
+  .grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    gap: auto;
+  }
+  
+  .trending {
+    overflow:hidden;
+    display: inline;
+    grid-column: 1 /6;
+    grid-row: 1;
+    max-width: 1080px;
+    background-color: white;
+  }
+  
+  .trending section {
+    display: inline;
+    overflow:hidden;
+    grid-column: 1/6;
+    grid-row: 1
+    max-width: 1080px;
+    color: black;
+  }
+  
+  .playlists {
+   grid-row: 2/3;
+   grid-column:1/3;
+  
+   overflow: hidden;
+    background-color: #2999FB;
+  }
+  .playlists section{
+    grid-row: 2/3;
+    grid-column:1/3;
+    overflow: hidden;
+    background-color: #0D8DFB;
+    text-align: center;
+  }
+  
+  .curated {
+    grid-row:2/3;
+    grid-column:4/6;
+    overflow: hidden;
+    background-color: #21049D;
+  }
+  .curated section {
+    grid-row:2/3;
+    grid-column:4/6; 
+    background-color: #030ABC;
+    text-align: center;
+  }
+  
+  
+  h1 {
+    font-size: 1.25em;
+  }
+  
+  h2, h3 {
+    font-size: 1em;
+    color: #590242;
+  }
+  
+  footer {
+    background-color: white;
+    padding: 20px;
+  }
+  
+  footer p {
+    font-size: .75 em;
+    color: #590242;
+    justify-content: center;
+    text-align: center;
+    
+  }
+  
+  button {
+    color: white;
+    background-color: #590242;
+  }
+  
+  button:hover{
+    background-color: #020659;
+  }
+  
+  
+  @media screen and (min-width: 375px){
+    img {
+      float: top;
+    }
+    ul {
+      overflow: hidden;
+      max-height: 0;
+      transition: max-height .2s ease-out;
+  }
+  label {
+      cursor: pointer;
+      display: inline-block;
+      padding: 28px 20px;
+      position: relative;
+      user-select: none;
+  }
+  label span {
+      background-color: #ffffff;
+      display: block;
+      height: 2px;
+      position: relative;
+      transition: background-color .2s ease-out;
+      width: 18px;
+  }
+  label span:before, label span:after {
+      background: #ffffff;
+      content: '';
+      display: block;
+      height: 100%;
+      position: absolute;
+      transition: all .2s ease-out;
+      width: 100%;
+  }
+  label span:before {
+      top: 5px;
+  }
+  label span:after {
+      top: -5px;
+  }
+  input {
+      display: none;
+  }
+  input:checked ~ ul {
+      max-height: 500px;
+  }
+  input:checked ~ label span {
+      background: transparent;
+  }
+  input:checked ~ label span:before {
+      transform: rotate(-45deg);
+  }
+  input:checked ~ label span:after {
+      transform: rotate(45deg);
+  }
+  input:checked ~ label:not(.steps) span:before, input:checked ~ label:not(.steps) span:after {
+      top: 0;
+  }
+  }
+  
+  @media screen and (min-width: 834px){
+    img {
+      float:left;
+    }
+    button{
+      float: right;
+    }
+    ul {
+          overflow: visible;
+          position: absolute;
+          top: 0;
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+      }
+      label span, input {
+          display: none;
+      }
+  }
+  
+  
+  
+  /* provided code*/
+  
+  
+  /*
+  .trending ::-webkit-scrollbar {
+  
+  }
+  .trending ::-webkit-scrollbar-track {
+  
+  }
+  .trending ::-webkit-scrollbar-thumb {
+  
+  }
+  .trending ::-webkit-scrollbar-thumb:hover {
+  
+  }
+  .playlists ::-webkit-scrollbar, .curated ::-webkit-scrollbar {
+  
+  }
+  .playlists ::-webkit-scrollbar-track, .curated ::-webkit-scrollbar-track  {
+  
+  }
+  .playlists ::-webkit-scrollbar-thumb, .curated ::-webkit-scrollbar-thumb {
+  
+  }
+  .playlists ::-webkit-scrollbar-thumb:hover, .curated ::-webkit-scrollbar-thumb:hover {
+  
+  }
+  
+  
+  audio::-webkit-media-controls-mute-button {
+  
+  }
+  audio::-webkit-media-controls-play-button {
+  
+  }
+  audio::-webkit-media-controls-enclosure {
+  
+  }
+  */
